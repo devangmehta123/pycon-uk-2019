@@ -66,7 +66,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
       echo I am provisioning...
       date > /etc/vagrant_provisioned_at
-      sudo apt-get -y install python3 pip3
+      sudo apt-get -y install python3 python3-pip
       sudo pip3 install django    apt-get update
   SHELL
 end
