@@ -68,6 +68,6 @@ Vagrant.configure("2") do |config|
       date > /etc/vagrant_provisioned_at
       sudo apt-get -y update
       sudo apt-get -y install python3 python3-pip
-      sudo pip3 install django    apt-get update
+      sudo pip3 install django
   SHELL
 end
