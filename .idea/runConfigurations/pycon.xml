@@ -5,6 +5,7 @@
     <option name="PARENT_ENVS" value="true" />
     <envs>
       <env name="PYTHONUNBUFFERED" value="1" />
+      <env name="DJANGO_SETTINGS_MODULE" value="pycon.settings" />
     </envs>
     <option name="SDK_HOME" value="vagrant://C:\Users\DevangMehta.GOCOMPARE\pycon-uk-2019/usr/bin/python3" />
     <option name="WORKING_DIRECTORY" value="" />
