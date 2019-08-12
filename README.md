@@ -11,8 +11,8 @@ Setup for Django REST Framework (DRF) workshop using virtualbox, vagrant, python
 some time to be up for the first time, but subsquent updates (reprovisions) and boot up should be quicker.
 
 ## Notes about virtualbox VM created by vagrant
-* Vagrantfile configures it to use 4 CPU cores and 4GB memory. You can change that in Vagrntfile.
-* Vagrantfile will create a host-only network on 192.168.33.10 in your notebook. We can use this IP through browswer 
+* Vagrantfile configures it to use 4 CPU cores and 4GB memory. You can change that in Vagrantfile.
+* Vagrantfile will create a host-only network on 192.168.33.10 in your notebook. We can use this IP through browser 
 and other tools for testing.
 
 ## Presenter's background
