@@ -1,7 +1,10 @@
 # pycon-uk-2019
 Setup for Django REST Framework (DRF) workshop using virtualbox, vagrant, python, django, DRF, postgres
 
-## Pre install these to follow the workshop in your own notebook, it should work on win, mac, linux but my experience is primarily on win
+## Preparation of environment in advance 
+Pre install these to follow the workshop in your own notebook. These tools should work almost identically on win, mac,
+linux but my experience is primarily on win.
+* postman for REST API testing (https://www.getpostman.com)
 * git, preferably original git from git-scm: https://git-scm.com/downloads
 * clone this repo: https://github.com/devangmehta123/pycon-uk-2019/
 * latest version of virtualbox and vagrant
@@ -37,7 +40,8 @@ detail about framework, setup, etc. *You only need to know what is practical and
     that you use. By default, python is version 2.x but we want to use 3.x. So, always use python3 and you will be fine.*
     * dev server is started like this: cd /vagrant/pycon (note that /vagrant/ is a shared folder between your VM and 
     your project in host OS) and then python3 manage.py runserver
-    * setting up debugger inside pycharm will help to see what is happening. Pycharm professional has a very useful
-    feature for using remote interpreter inside vagrant VM (and more recently, inside docker containers). We will go
-    through remote interpreter setup and debugger configuration during workshop.
+    * setting up debugger inside pycharm will help to see what is happening and the debugger typically runs the same
+    dev server as above. Pycharm professional has a very useful feature for using remote interpreter inside vagrant VM
+    (and more recently, inside docker containers). We will go through remote interpreter setup and debugger
+    configuration during workshop.
      
