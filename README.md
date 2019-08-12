@@ -16,10 +16,11 @@ some time to be up for the first time, but subsquent updates (reprovisions) and 
 and other tools for testing.
 
 ## Presenter's background
-* Returned back to active development about 3 years ago
-* Wrote first line of python code in Django/DRF to implement biz logic
+* Returned back to active development about 3 years ago.
+* Wrote first line of python code in Django/DRF to implement biz logic.
 * More interested in implementing biz logic in python in an established database schema and with lots of legacy biz
 logic implemented in wild PHP (no framework).
-* Learnt some parts of the framework through practically problem solving, but other individuals. 
+* Learnt some parts of the framework through practically problem solving, but other specialists were responsible for
+setting up framework, etc. 
 * THIS IS BIGGEST ADVANTAGE OF PYTHONIC APPROACH: It lets you be productive immediately without mastering too much
 detail about framework, setup, etc. *You only need to know what is practical and useful.*
