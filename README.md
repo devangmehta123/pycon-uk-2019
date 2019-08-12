@@ -24,3 +24,12 @@ logic implemented in wild PHP (no framework).
 setting up framework, etc. 
 * THIS IS BIGGEST ADVANTAGE OF PYTHONIC APPROACH: It lets you be productive immediately without mastering too much
 detail about framework, setup, etc. *You only need to know what is practical and useful.*
+
+## Django setup because DRF depends on Django
+* Vagrantfile above installs most dependencies but Django project has to be initialized
+    * ssh into VM (vagrant ssh), cd into /vagrant which is shared folder with host OS and git, then do 
+    'django-admin startproject pycon' which will initialize project pycon. More details about what happens are here:
+    https://docs.djangoproject.com/en/2.2/intro/tutorial01/, *but on ubuntu, just be careful about which python you
+    use. By default, python is version 2.x but we want to use 3.x. So, always use python3 and you will be fine.*
+    * dev server is started like this: cd /vagrant/pycon; python3 manage.py runserver
+     
