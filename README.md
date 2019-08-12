@@ -6,7 +6,8 @@ Setup for Django REST Framework (DRF) workshop using virtualbox, vagrant, python
 * clone this repo: https://github.com/devangmehta123/pycon-uk-2019/
 * latest version of virtualbox and vagrant
 * lastest version of the free community pycharm from jetbrains. https://www.jetbrains.com/pycharm/
-* repo comes with pre-configured Vagrantfile. Just cd to project directory and do 'vagrant up' and whole system will be set up, including database server. It uses ubuntu bionic and could take
+* repo comes with pre-configured Vagrantfile. Just cd to project directory and do 'vagrant up' and whole system will be
+ set up, including database server. It uses ubuntu bionic and could take
 some time to be up for the first time, but subsquent updates (reprovisions) and boot up should be quicker.
 
 ## Notes about virtualbox VM created by vagrant
@@ -14,4 +15,11 @@ some time to be up for the first time, but subsquent updates (reprovisions) and 
 * Vagrantfile will create a host-only network on 192.168.33.10 in your notebook. We can use this IP through browswer 
 and other tools for testing.
 
-
+## Presenter's background
+* Returned back to active development about 3 years ago
+* Wrote first line of python code in Django/DRF to implement biz logic
+* More interested in implementing biz logic in python in an established database schema and with lots of legacy biz
+logic implemented in wild PHP (no framework).
+* Learnt some parts of the framework through practically problem solving, but other individuals. 
+* THIS IS BIGGEST ADVANTAGE OF PYTHONIC APPROACH: It lets you be productive immediately without mastering too much
+detail about framework, setup, etc. *You only need to know what is practical and useful.*
