@@ -5,7 +5,8 @@ Setup for Django REST Framework (DRF) workshop using virtualbox, vagrant, python
 * git, preferably original git from git-scm: https://git-scm.com/downloads
 * clone this repo: https://github.com/devangmehta123/pycon-uk-2019/
 * latest version of virtualbox and vagrant
-* lastest version of the free community pycharm from jetbrains. https://www.jetbrains.com/pycharm/
+* latest version of professional pycharm from jetbrains. https://www.jetbrains.com/pycharm/. You can get a free trial
+just for the purpose of this workshop. It is useful to have the full debugger support for Django to have a closer look.
 * repo comes with pre-configured Vagrantfile. Just cd to project directory and do 'vagrant up' and whole system will be
  set up, including database server. It uses ubuntu bionic and could take
 some time to be up for the first time, but subsquent updates (reprovisions) and boot up should be quicker.
@@ -20,6 +21,9 @@ and other tools for testing.
 * Wrote first line of python code in Django/DRF to implement biz logic.
 * More interested in implementing biz logic in python in an established database schema and with lots of legacy biz
 logic implemented in wild PHP (no framework).
+* Did not use Django models initially due to very difficult database schema.
+* No experience with postgresql, only mysql. But postgresql is more natural fit for DRF, hence we use it in this
+workshop.
 * Learnt some parts of the framework through practically problem solving, but other specialists were responsible for
 setting up framework, etc. 
 * THIS IS BIGGEST ADVANTAGE OF PYTHONIC APPROACH: It lets you be productive immediately without mastering too much
@@ -29,7 +33,10 @@ detail about framework, setup, etc. *You only need to know what is practical and
 * Vagrantfile above installs most dependencies but Django project has to be initialized
     * ssh into VM (vagrant ssh), cd into /vagrant which is shared folder with host OS and git, then do 
     'django-admin startproject pycon' which will initialize project pycon. More details about what happens are here:
-    https://docs.djangoproject.com/en/2.2/intro/tutorial01/, *but on ubuntu, just be careful about which python you
-    use. By default, python is version 2.x but we want to use 3.x. So, always use python3 and you will be fine.*
+    https://docs.djangoproject.com/en/2.2/intro/tutorial01/, *but on ubuntu, just be careful about the python binary
+    that you use. By default, python is version 2.x but we want to use 3.x. So, always use python3 and you will be fine.*
     * dev server is started like this: cd /vagrant/pycon; python3 manage.py runserver
+    * setting up debugger inside pycharm will help to see what is happening. Pycharm professional has a very useful
+    feature for using remote interpreter inside vagrant VM (and more recently, inside docker containers). We will go
+    through remote interpreter setup and debugger configuration during workshop.
      
