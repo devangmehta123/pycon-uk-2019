@@ -21,5 +21,13 @@ Vagrant.configure("2") do |config|
       sudo apt-get -y update
       sudo apt-get -y install python3 python3-pip postgresql-10 libpq-dev
       sudo pip3 install psycopg2 django markdown django-filter djangorestframework
+      cd /vagrant
+      # Initialising django project and app as per tutorial here: https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+      sudo django-admin startproject pycon
+      cd pycon
+      sudo python3 manage.py startapp polls
+      # sudo cp /vagrant/pycon-uk-2019/contrib/polls/views.py ./polls/
+      # sudo cp /vagrant/pycon-uk-2019/contrib/polls/urls.py ./polls/
+      # sudo cp /vagrant/pycon-uk-2019/contrib/pycon/urls.py ./pycon/
   SHELL
 end
