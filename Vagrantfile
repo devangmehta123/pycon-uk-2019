@@ -21,17 +21,17 @@ Vagrant.configure("2") do |config|
       sudo apt-get -y update
       sudo apt-get -y install python3 python3-pip postgresql-10 libpq-dev
       sudo pip3 install psycopg2 django markdown django-filter djangorestframework
+      cd /vagrant
 
       # Initialising django project and app as per tutorial here: https://docs.djangoproject.com/en/2.2/intro/tutorial01/
       # After initialising, copy a sample view and a sample URL mapping into the sample app named 'polls'
       # The result is all in git so we can comment this out now
-      # cd /vagrant
       # sudo django-admin startproject pycon
       # cd pycon
       # sudo python3 manage.py startapp polls
-      # sudo cp /vagrant/contrib/polls/views.py ./polls/
-      # sudo cp /vagrant/contrib/polls/urls.py ./polls/
-      # sudo cp /vagrant/contrib/pycon/urls.py ./pycon/
+      # sudo cp /vagrant/devang-contrib/polls/views.py ./polls/
+      # sudo cp /vagrant/devang-contrib/polls/urls.py ./polls/
+      # sudo cp /vagrant/devang-contrib/pycon/urls.py ./pycon/
 
       # As per tuturial part 2, follow this up by changing the database to postgres, already changed in settings file
       # in pycon/pycon/settings.py in git so we won't do this here
@@ -41,5 +41,11 @@ Vagrant.configure("2") do |config|
       sudo -u postgres createuser --superuser vagrant
       sudo -u vagrant createdb vagrant
       sudo -u vagrant psql -c "ALTER USER vagrant PASSWORD 'vagrant'"
+
+      # apply initial migrations for the apps admin, auth, contenttypes, sessions after database setup
+      cd /vagrant/pycon
+      sudo python3 manage.py migrate
+
+      # If migrations are successful, you should be able to access the admin app here: http://192.168.33.10:8000/admin/
   SHELL
 end
