@@ -5,6 +5,7 @@
       <w>modifyvm</w>
       <w>natdnshostresolver</w>
       <w>natdnsproxy</w>
+      <w>postgresql</w>
       <w>pycon</w>
       <w>startapp</w>
       <w>virtualbox</w>

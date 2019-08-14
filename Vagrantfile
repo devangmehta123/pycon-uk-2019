@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
       # Initialising django project and app as per tutorial here: https://docs.djangoproject.com/en/2.2/intro/tutorial01/
       # After initialising, copy a sample view and a sample URL mapping into the sample app named 'polls'
       # The result is all in git so we can comment this out now
-      cd /vagrant
+      # cd /vagrant
       # sudo django-admin startproject pycon
       # cd pycon
       # sudo python3 manage.py startapp polls
@@ -33,6 +33,13 @@ Vagrant.configure("2") do |config|
       # sudo cp /vagrant/contrib/polls/urls.py ./polls/
       # sudo cp /vagrant/contrib/pycon/urls.py ./pycon/
 
-
+      # As per tuturial part 2, follow this up by changing the database to postgres, already changed in settings file
+      # in pycon/pycon/settings.py in git so we won't do this here
+      # But we will create a role named vagrant which will be the superuser and we will use this user for the workshop
+      # And we will also create the database named vagrant to match this user's name
+      # This is all we need to put in the settings.py file to connect for this dev database
+      sudo -u postgres createuser --superuser vagrant
+      sudo -u vagrant createdb vagrant
+      sudo -u vagrant psql -c "ALTER USER vagrant PASSWORD 'vagrant'"
   SHELL
 end
