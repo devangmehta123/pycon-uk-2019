@@ -24,11 +24,13 @@ Vagrant.configure("2") do |config|
       cd /vagrant
 
       # Initialising django project and app as per tutorial here: https://docs.djangoproject.com/en/2.2/intro/tutorial01/
-      # After initialising, copy a sample view and a sample URL mapping into the sample app named 'polls'
+      # After initialising, copy an updated settings file, sample view and a sample URL mapping into the sample app 
+      # named 'polls'. Each project has its own settings file
       # The result is all in git so we can comment this out now
       # sudo django-admin startproject pycon
       # cd pycon
       # sudo python3 manage.py startapp polls
+      # sudo cp /vagrant/devang-contrib/polls/settings.py ./polls/
       # sudo cp /vagrant/devang-contrib/polls/views.py ./polls/
       # sudo cp /vagrant/devang-contrib/polls/urls.py ./polls/
       # sudo cp /vagrant/devang-contrib/pycon/urls.py ./pycon/
