@@ -48,5 +48,6 @@ Vagrant.configure("2") do |config|
 
       # If migrations are successful, you should be able to access the admin app after starting the debugger or 
       # doing using runserver like 'python3 manage.py runserver 0.0.0.0:8000' : http://192.168.33.10:8000/admin/
+      # and our sample polls app is available here: http://192.168.33.10:8000/polls/
   SHELL
 end

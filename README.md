@@ -1,6 +1,9 @@
 # pycon-uk-2019
 Setup for Django REST Framework (DRF) workshop using virtualbox, vagrant, python, django, DRF, postgres
 
+## Initial audience question
+How many have any prior experience with a web app framework and REST API design?
+
 ## Preparation of environment in advance 
 Pre install these to follow the workshop in your own notebook. These tools should work almost identically on win, mac,
 linux but my experience is primarily on win.
@@ -52,7 +55,8 @@ and put into git by me.*
 * dev server is started like this: cd /vagrant/pycon (note that /vagrant/ is a shared folder between your VM and 
   your project in host OS) and then 'python3 manage.py runserver 0.0.0.0:8000'. More info about how this site works
   is here: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/. We have to set the login/password manually here; 
-  can't do it through Vagrantfile because the command will not take a password input: python3 manage.py createsuperuser 
+  can't do it through Vagrantfile because the command will not take a password input: python3 manage.py createsuperuser
+* A sample app is pre-installed at http://192.168.30.10/polls/ (see Vagrantfile) 
 * setting up debugger inside pycharm will help to see what is happening and the debugger typically runs the same
   dev server as above. Pycharm professional has a very useful feature for using remote interpreter inside vagrant VM
   (and more recently, inside docker containers). We will go through remote interpreter setup and debugger
@@ -60,4 +64,7 @@ and put into git by me.*
 * We can play around with the django shell like this, 'python3 manage.py shell' where the full django environment
   is available to you in a shell. That's very powerful, anything you can do in a web view, you can do here to see how it
   behaves.
+  
+## Finally, to the REST framework
+
      
