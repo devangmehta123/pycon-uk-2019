@@ -66,5 +66,10 @@ and put into git by me.*
   behaves.
   
 ## Finally, to the REST framework
+* A simple model backed API, try it here http://192.168.30.10:8000/drf_test/. You will notice that the API is browseeable.
+  You would turn it off (and debug mode too) in production but during development, it is very handy.
+* I prefer to use postman for testing (through experience, I know that the browseability is not perfect). You can
+  use this shared collection to see my tests: https://www.getpostman.com/collections/2dc8e1fa4a36d2832315
+
 
      
