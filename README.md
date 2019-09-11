@@ -57,7 +57,7 @@ and put into git by me.*
   dev server as above. Pycharm professional has a very useful feature for using remote interpreter inside vagrant VM
   (and more recently, inside docker containers). We will go through remote interpreter setup and debugger
   configuration during workshop.
-* We can play around with the django shell like this, 'python3 manage.py shell' where you the whole django environment
+* We can play around with the django shell like this, 'python3 manage.py shell' where the full django environment
   is available to you in a shell. That's very powerful, anything you can do in a web view, you can do here to see how it
   behaves.
      
