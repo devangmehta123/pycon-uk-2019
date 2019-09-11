@@ -39,7 +39,8 @@ and other tools for testing.
   for a web app. DRF is one of those apps; it lets you plumb a REST API around your biz logic.
 
 ## Django setup because DRF depends on Django
-Vagrantfile above installs most dependencies but django project has to be initialized
+Vagrantfile above installs most dependencies. *You do not have to do the below explicitly because it is already done
+and put into git by me.*
 * ssh into VM (vagrant ssh), cd into /vagrant which is shared folder with host OS and git, then do 
   'django-admin startproject pycon' which will initialize project pycon. More details about what happens are here:
   https://docs.djangoproject.com/en/2.2/intro/tutorial01/, *but on ubuntu, just be careful about the python binary
