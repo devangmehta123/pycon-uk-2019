@@ -46,6 +46,7 @@ Vagrant.configure("2") do |config|
       cd /vagrant/pycon
       sudo python3 manage.py migrate
 
-      # If migrations are successful, you should be able to access the admin app here: http://192.168.33.10:8000/admin/
+      # If migrations are successful, you should be able to access the admin app after starting the debugger or 
+      # doing using runserver like 'python3 manage.py runserver 0.0.0.0:8000' : http://192.168.33.10:8000/admin/
   SHELL
 end

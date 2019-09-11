@@ -41,13 +41,16 @@ and other tools for testing.
 ## Django setup because DRF depends on Django
 Vagrantfile above installs most dependencies. *You do not have to do the below explicitly because it is already done
 and put into git by me.*
+* A lot of below originates from these docs, https://docs.djangoproject.com/en/2.2/topics/install/ and 
+  https://www.django-rest-framework.org/#installation. But we do not want to spend too much time on them,
+  so I have compressed that process.
 * ssh into VM (vagrant ssh), cd into /vagrant which is shared folder with host OS and git, then do 
   'django-admin startproject pycon' which will initialize project pycon. More details about what happens are here:
   https://docs.djangoproject.com/en/2.2/intro/tutorial01/, *but on ubuntu, just be careful about the python binary
   that you use. By default, python is version 2.x but we want to use 3.x. So, always use python3 and you will be 
   fine.*
 * dev server is started like this: cd /vagrant/pycon (note that /vagrant/ is a shared folder between your VM and 
-  your project in host OS) and then python3 manage.py runserver
+  your project in host OS) and then python3 manage.py runserver 0.0.0.0:8000
 * setting up debugger inside pycharm will help to see what is happening and the debugger typically runs the same
   dev server as above. Pycharm professional has a very useful feature for using remote interpreter inside vagrant VM
   (and more recently, inside docker containers). We will go through remote interpreter setup and debugger
