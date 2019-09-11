@@ -50,9 +50,12 @@ and put into git by me.*
   that you use. By default, python is version 2.x but we want to use 3.x. So, always use python3 and you will be 
   fine.*
 * dev server is started like this: cd /vagrant/pycon (note that /vagrant/ is a shared folder between your VM and 
-  your project in host OS) and then python3 manage.py runserver 0.0.0.0:8000
+  your project in host OS) and then 'python3 manage.py runserver 0.0.0.0:8000'
 * setting up debugger inside pycharm will help to see what is happening and the debugger typically runs the same
   dev server as above. Pycharm professional has a very useful feature for using remote interpreter inside vagrant VM
   (and more recently, inside docker containers). We will go through remote interpreter setup and debugger
   configuration during workshop.
+* We can play around with the django shell like this, 'python3 manage.py shell' where you the whole django environment
+  is available to you in a shell. That's very powerful, anything you can do in a web view, you can do here to see how it
+  behaves.
      
