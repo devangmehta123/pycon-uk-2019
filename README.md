@@ -66,11 +66,20 @@ and put into git by me.*
   behaves.
   
 ## Finally, to the REST framework
-* A simple model backed API, try it here http://192.168.30.10:8000/drf_test/. You will notice that the API is browseeable.
-  You would turn it off (and debug mode too) in production but during development, it is very handy.
-* I prefer to use postman for testing (through experience, I know that the browseability is not perfect). You can
+* A simple model backed API which has CRUD operations, try it here http://192.168.30.10:8000/drf_test/. You will notice
+  that the API is browse-able which helps to understand how it works. You would turn it off (and debug mode too) in
+  production but during development, it is very handy.
+* I prefer to use postman for testing (through experience, I know that the browse-ability is not perfect). You can
   use this shared collection to see my tests: https://www.getpostman.com/collections/2dc8e1fa4a36d2832315
+* This kind of stuff drives me mad: 
+  https://stackoverflow.com/questions/28459418/rest-api-put-vs-patch-with-real-life-examples
+* Our API in Elx is not fully REST compliant. In fact, REST or HATEOAS compliance may or may not be desirable. We have
+  won lots of business away from our competitor by being a poor man's POST only API and NOT HATEOAS. Another example of
+  an officially published POST only API is Mandrill.
+* DRF is happy to support you in many different ways. Whether you use ORM (django models) or not, strict serializers or
+  not. There is always a way to tweak the framework to support your style.
 * There is an easy API app from the quickstart guide online: https://www.django-rest-framework.org/tutorial/quickstart/
+  which includes some serializers.
 
 
 
