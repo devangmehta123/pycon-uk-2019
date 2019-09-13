@@ -70,6 +70,8 @@ and put into git by me.*
   You would turn it off (and debug mode too) in production but during development, it is very handy.
 * I prefer to use postman for testing (through experience, I know that the browseability is not perfect). You can
   use this shared collection to see my tests: https://www.getpostman.com/collections/2dc8e1fa4a36d2832315
+* There is an easy API app from the quickstart guide online: https://www.django-rest-framework.org/tutorial/quickstart/
+
 
 
      
