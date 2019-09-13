@@ -33,7 +33,7 @@ and other tools for testing.
 * Still learning advanced python features like generators, etc.
 * No experience with postgresql, only mysql. But postgresql is more natural fit for DRF, hence we use it in this
   workshop.
-* Learnt some parts of the framework through practically problem solving, but other specialists were responsible for
+* Learnt some parts of the framework through practical problem solving, but other specialists were responsible for
   framework and lower level issues. 
 * THIS IS BIGGEST ADVANTAGE OF PYTHONIC APPROACH: It lets you be productive immediately without mastering too much
   detail about framework, setup, etc. You can be productive quickly which helps you build momentum and buy-in
