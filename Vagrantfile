@@ -30,8 +30,6 @@ Vagrant.configure("2") do |config|
       # sudo django-admin startproject pycon
       # cd pycon
       # sudo python3 manage.py startapp polls
-      # mkdir /vagrant/pycon/drf_test
-      # sudo cp /vagrant/devang-contrib/drf_test/urls.py
       # sudo cp /vagrant/devang-contrib/polls/settings.py ./polls/
       # sudo cp /vagrant/devang-contrib/polls/views.py ./polls/
       # sudo cp /vagrant/devang-contrib/polls/urls.py ./polls/
