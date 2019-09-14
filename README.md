@@ -80,6 +80,9 @@ and put into git by me.*
   not. There is always a way to tweak the framework to support your style.
 * There is an easy API app from the quickstart guide online: https://www.django-rest-framework.org/tutorial/quickstart/
   which includes some serializers.
+* We don't use models or viewset routers or any fancy stuff. We have a very custom basic APIView which
+  just gives us an entry point with the values validated by the serliazers. Look in simple/
+  for an example.
 
 
 

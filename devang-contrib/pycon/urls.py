@@ -19,6 +19,10 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('polls/', include('polls.urls')),
+    path('drf_test/', include('drf_test.urls')),
+    path('quickstart/', include('quickstart.urls')),
+    url(r'^v3/', include('simple.urls')),
     path('admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
 ]
+
